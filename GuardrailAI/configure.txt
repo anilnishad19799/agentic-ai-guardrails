@@ -1,0 +1,22 @@
+Fow you should work with python version should be less than 3.13.5 as it is not stable and gives Error
+so I install python version 3.12 and it install detect_pii validator fine
+
+Install 
+pip install guardrails-ai
+
+Generate API Key
+goto guardrails HUB and Generate API Key
+
+configure guardrail using CLI and run below command  in cmd
+guardrails configure
+The configuration process will ask you three questions:
+Whether you want to enable metrics reporting.
+Whether you want to use our hosted remote inference endpoints for validators that utilize large ML models.
+To enter the API key you generated in the previous step. This is required in order to install validators in the next step.
+
+Install a validator from the Guardrails Hub
+In order to perform any validation on LLM output with Guardrails, you will need to install an appropriate validator for your use case from the Guardrails Hub.
+
+for installing detect_pii from guardrail run below command 
+guardrails hub install hub://guardrails/detect_pii
+
